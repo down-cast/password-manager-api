@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "Downcast.Authentication.API": {
+    "Downcast.PasswordManager.API": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

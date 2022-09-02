@@ -28,7 +28,7 @@ public class BaseTestClass
 
     public BaseTestClass()
     {
-        HttpClient httpClient = new AuthenticationServerInstance(UserManagerMock, SessionManagerMock).CreateClient();
+        HttpClient httpClient = new PasswordManagerServerInstance(UserManagerMock, SessionManagerMock).CreateClient();
         Client = RestService.For<IPasswordManagerClient>(httpClient);
     }
 

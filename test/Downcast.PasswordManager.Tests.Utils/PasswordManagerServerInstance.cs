@@ -19,13 +19,13 @@ using Refit;
 
 namespace Downcast.PasswordManager.Tests.Utils;
 
-public class AuthenticationServerInstance : WebApplicationFactory<PasswordManagerController>
+public class PasswordManagerServerInstance : WebApplicationFactory<PasswordManagerController>
 {
     private readonly JsonWebTokenHandler _handler = new();
     private readonly Mock<ISessionManagerClient> _sessionManagerMock;
     private readonly Mock<IUserManagerClient> _userManagerClient;
 
-    public AuthenticationServerInstance(
+    public PasswordManagerServerInstance(
         Mock<IUserManagerClient> userManagerClient,
         Mock<ISessionManagerClient> sessionManagerMock)
     {
